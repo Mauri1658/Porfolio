@@ -1,0 +1,107 @@
+:root{
+    --bg-gradiant: linear-gradient(to right, #000000, #a8a8a8, #ffffff);
+    --bg-gris: #a8a8a8;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px 0px 0px;
+    
+
+    & h1{
+        font-size: 25px;
+        font-variant: small-caps;
+    }
+
+    & h2{
+        font-variant: small-caps;
+        font-size: 20px;
+        margin-bottom: 5px;
+
+    }
+
+    & nav{
+        background: var(--bg-gradiant);
+        width: 100%;
+        padding: 10px;
+
+        ol{
+            margin: 0px;
+            padding: 1px;
+            text-align: center;
+            list-style: none;
+
+            li{
+                display:inline-block;
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+            }
+
+            & a:hover{
+                color: red
+            }
+        }
+    }  
+}
+
+#body1{
+    background-color: var(--bg-gris);
+
+    #containerI{
+        padding: 0px 10px 10px;
+
+        #skills{
+            margin-bottom: 10px;
+            display: flex;
+
+            .iconosSkill{
+
+                .cardSkills{
+                    
+                }
+            }
+            
+        }
+    }
+
+
+
+}
+
+
+
+
+
+footer{
+        text-align: center;
+        background: var(--bg-gradiant);
+        padding: 25px;
+        color: white;
+        letter-spacing: 2px;
+
+        & a{
+            color: white;
+        }
+
+        & a:hover{
+            color: red
+        }
+
+        .social{
+            margin: 10px;
+        }
+}
