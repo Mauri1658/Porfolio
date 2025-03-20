@@ -1,51 +1,59 @@
 :root{
-    --bg-gradiant: linear-gradient(to right, #000000, #a8a8a8, #ffffff);
+    --bg-gradiant: linear-gradient(to right, #000000 30%, #a8a8a8 90%, #ffffff);
     --bg-gris: #a8a8a8;
+    --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
+    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
+    --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
+
+
 }
 
 *{
     margin: 0px;
     padding: 0px;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
     grid-area: header;
     text-align: center;
-    margin: 10px 0px;
-    padding: 10px 0px 0px;
-    
+    margin: 10px 0px 0px;
 
     & h1{
         font-size: 25px;
         font-variant: small-caps;
+        background: var(--bg-h);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     & h2{
         font-variant: small-caps;
         font-size: 20px;
         margin-bottom: 5px;
-
+        background: var(--bg-h2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
-    & nav{
+    nav{
         background: var(--bg-gradiant);
         width: 100%;
         padding: 10px;
 
-        ol{
+        & ol{
             margin: 0px;
             padding: 1px;
             text-align: center;
             list-style: none;
 
-            li{
+            & li{
                 display:inline-block;
                 margin-right: 15px;
                 margin-left: 15px;
             }
 
-            a{
+            & a{
                 color: white;
                 text-decoration: none;
                 font-size: 15px;
@@ -59,26 +67,72 @@ header{
 }
 
 #body1{
-    background-color: var(--bg-gris);
 
     #containerI{
         padding: 0px 10px 10px;
+        background: var(--bg-gris);
+
+        h2{
+            background: var(--bg-h2);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            padding: 15px 15px 10px;
+            font-size: 30px;
+        }
+
+        p{
+            text-align: center;
+            padding: 0px 15px 10px;
+        }
 
         #skills{
-            margin-bottom: 10px;
+            margin: 30px 0px;
             display: flex;
-
-            .iconosSkill{
-
-                .cardSkills{
-                    
-                }
+            flex-wrap: wrap;
+            gap: 70px;
+            align-content: center;
+            text-align: center;
+            justify-content: center;
+        
+            & .iconosSkill{
+                font-size: 20px;
+                border-radius: 10px;
+                border: 1px solid ;
+                height: 100px;
+                width: 120px;
+                line-height: 30px;
+                align-content: center;
+                background: var(--bg-radial);
             }
             
         }
+
+        hr{
+            border: 3px dashed rgb(179, 179, 179);
+            margin: auto -7px
+        }
+
+        #softskills{
+            margin: 30px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+            align-content: center;
+            text-align: center;
+            justify-content: center;
+        
+            & .card{
+                border-radius: 100px;
+                border: 1px solid ;
+                height: 150px;
+                width: 150px;
+                line-height: 30px;
+                align-content: center;
+                background: var(--bg-radial);
+            }
+        }
     }
-
-
 
 }
 
@@ -89,7 +143,7 @@ header{
 footer{
         text-align: center;
         background: var(--bg-gradiant);
-        padding: 25px;
+        padding: 20px;
         color: white;
         letter-spacing: 2px;
 
@@ -103,5 +157,9 @@ footer{
 
         .social{
             margin: 10px;
+        }
+
+        p span{
+            color: red;
         }
 }
