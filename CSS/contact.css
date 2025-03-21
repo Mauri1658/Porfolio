@@ -5,7 +5,7 @@
     --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
     --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
     --bg-h1: linear-gradient(to left, #fd0000 80%, #000000 99%);
-
+    --bg-corner: linear-gradient(230deg,#1b1b1b, #919191);
 
 
 }
@@ -16,8 +16,93 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main{
+    
+    background: var(--bg-corner);
+    
+    & h1{
+        background: var(--bg-h1);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 30px 15px 20px;
+    }
+
+    .conjunto{
+        padding: 20px 20px;
+        justify-content: center;
+
+        
+        & h2{
+        background: var(--bg-h2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+        }
+
+        & h4{
+            margin: 30px 0px 0px;
+
+            & i:hover{
+                color: red;
+                cursor: context-menu;
+            }
+        }
+
+        img[src="..\\Img\\Localización.png"] {
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            margin: 10px 0px;
+            transition: transform 0.3s ease;
+        }
+        
+        img[src="..\\Img\\Localización.png"]:hover {
+            transform: scale(1.1);
+            border-radius: 0%;
+            margin: 50px 50px;
+            width: 800px;
+            height: 400px;
+        }
+
+        #formulario{
+            display: flex;
+            flex-direction: column;
+
+            div{
+                margin-bottom: 20px;
+            }
+
+            input[type="radio"] {
+                margin: 5px;
+            }
+
+            input[type="checkbox"] + label {
+                margin-left: 10px; 
+            }
+
+            label + input[type="text"], input[type="email"] {
+                display: flex;
+                flex-direction: column;
+                width: 200px;         
+            }
+            
+            label + textarea{
+                display: flex;
+                flex-direction: column;
+                width: 250px;         
+            }
+
+            button{
+                cursor: pointer;
+                width: 75px;
+            }
+        }
+        
+    }
+
+}
+
 header{
-    grid-area: header;
     text-align: center;
     margin: 10px 0px 0px;
 
@@ -67,95 +152,6 @@ header{
         }
     }  
 }
-
-main{
-
-    background: var(--bg-gris);
-    
-    & h1{
-        background: var(--bg-h1);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        padding: 30px 15px 20px;
-    }
-
-    .conjunto{
-        padding: 20px 20px;
-        justify-content: center;
-
-        
-        & h2{
-        background: var(--bg-h2);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 20px;
-        }
-
-        & h4{
-            margin: 30px 0px 0px;
-
-            & i:hover{
-                color: red;
-                cursor: context-menu;
-            }
-        }
-
-        img[src="..\\Img\\Localización.png"] {
-            border-radius: 100%;
-            width: 100px;
-            height: 100px;
-            margin: 10px 0px;
-            transition: transform 0.3s ease;
-        }
-        
-        img[src="..\\Img\\Localización.png"]:hover {
-            transform: scale(1.1);
-            border-radius: 0%;
-            padding: 20px 0px;
-            margin: 0px 50px;
-            width: 800px;
-            height: 400px;
-        }
-
-        #formulario{
-            display: flex;
-            flex-direction: column;
-
-            div{
-                margin-bottom: 20px;
-            }
-
-            input[type="radio"] {
-                margin: 5px;
-            }
-
-            input[type="checkbox"] + label {
-                margin-left: 10px; 
-            }
-
-            label + input[type="text"], input[type="email"] {
-                display: flex;
-                flex-direction: column;
-                width: 200px;         
-            }
-            
-            label + textarea{
-                display: flex;
-                flex-direction: column;
-                width: 250px;         
-            }
-
-            button{
-                cursor: pointer;
-                width: 75px;
-            }
-        }
-        
-    }
-
-}
-
-
 
 footer{
     text-align: center;

@@ -4,7 +4,7 @@
     --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
     --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
     --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
-
+    --bg-corner: linear-gradient(230deg, #919191, #1b1b1b);
 
 }
 
@@ -14,8 +14,89 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main{
+
+    padding-bottom: 10px;
+    background: var(--bg-corner);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        background: var(--bg-h2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        padding: 15px 15px 10px;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        padding: 0px 15px 10px;
+    }
+
+    #skills{
+        margin: 30px 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+
+        
+        & .iconosSkill{
+            padding: 0px 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 1px solid ;
+            height: 125px;
+            width: 125px;
+            align-content: center;
+            background: var(--bg-radial);
+        }
+        
+        i{
+            color: red;
+        }
+    }
+
+    hr{
+        border: 3px dashed rgb(179, 179, 179);
+        margin: auto -7px
+    }
+
+    #softskills{
+        margin: 30px 0px 30px;
+        padding: 0px 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        text-align: center;
+        
+    
+        & .card{
+            border-radius: 100px;
+            border: 1px solid ;
+            height: 150px;
+            width: 150px;
+            line-height: 30px;
+            align-content: center;
+            background: var(--bg-radial);
+        }
+    }
+
+    i{
+        color: red;
+
+        p{
+            color: #000000;
+        }
+    }
+
+
+}
+
 header{
-    grid-area: header;
     text-align: center;
     margin: 10px 0px 0px;
 
@@ -64,88 +145,6 @@ header{
             }
         }
     }  
-}
-
-main{
-
-        padding-bottom: 10px;
-        background: var(--bg-gris);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h2{
-            background: var(--bg-h2);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
-            padding: 15px 15px 10px;
-            font-size: 30px;
-        }
-
-        p{
-            text-align: center;
-            padding: 0px 15px 10px;
-        }
-
-        #skills{
-            margin: 30px 0px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            text-align: center;
-
-            
-            & .iconosSkill{
-                padding: 0px 20px;
-                font-size: 20px;
-                border-radius: 10px;
-                border: 1px solid ;
-                height: 125px;
-                width: 125px;
-                align-content: center;
-                background: var(--bg-radial);
-            }
-            
-            i{
-                color: red;
-            }
-        }
-
-        hr{
-            border: 3px dashed rgb(179, 179, 179);
-            margin: auto -7px
-        }
-
-        #softskills{
-            margin: 30px 0px 30px;
-            padding: 0px 80px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            text-align: center;
-            
-        
-            & .card{
-                border-radius: 100px;
-                border: 1px solid ;
-                height: 150px;
-                width: 150px;
-                line-height: 30px;
-                align-content: center;
-                background: var(--bg-radial);
-            }
-        }
-
-        i{
-            color: red;
-
-            p{
-                color: #000000;
-            }
-        }
-    
-
 }
 
 footer{

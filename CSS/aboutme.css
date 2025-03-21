@@ -4,7 +4,8 @@
     --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
     --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
     --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
-
+    --bg-corner: linear-gradient(50deg, #919191, #1b1b1b);
+    --bg-carrusel: #1b1b1b;
 
 }
 
@@ -12,6 +13,42 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "main aside"
+    "footer footer"
+    ;
+}
+
+main{
+    grid-area: main;
+    background: var(--bg-corner);
+    padding: 15px;
+
+    img{
+        width: 200px;
+        height: auto;
+    }
+
+}
+
+aside{
+    grid-area: aside;
+    background: var(--bg-carrusel);
+
+    img{
+        margin: 0px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 header{
@@ -67,8 +104,8 @@ header{
 }
 
 
-
 footer{
+    grid-area: footer;
     text-align: center;
     background: var(--bg-gradiant);
     padding: 20px 0px;
