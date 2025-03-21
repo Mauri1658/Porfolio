@@ -4,6 +4,8 @@
     --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
     --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
     --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
+    --bg-h1: linear-gradient(to left, #fd0000 80%, #000000 99%);
+
 
 
 }
@@ -68,7 +70,63 @@ header{
 
 main{
 
-    h1{
+    background: var(--bg-gris);
+    
+    & h1{
+        background: var(--bg-h1);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 30px 15px 20px;
+    }
+
+    .conjunto{
+        padding: 0px 20px 340px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+        
+        & h2{
+        background: var(--bg-h2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+        }
+
+        & h4{
+            margin: 30px 0px 0px;
+
+            & i:hover{
+                color: red
+            }
+        }
+
+        #formulario{
+
+            display: flex;
+            flex-direction: column;
+
+            div{
+                display: flex;
+                margin-bottom: 15px;
+            }
+
+            input[type="text"] + label {
+                margin-right: 10px; 
+            }
+
+            input[type="radio"] {
+                margin-left: 10px;
+            }
+
+            input[type="checkbox"] + label {
+                margin-left: 10px; 
+            }
+
+            button{
+                cursor: pointer;
+            }
+        }
         
     }
 
