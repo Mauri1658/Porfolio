@@ -80,9 +80,7 @@ main{
     }
 
     .conjunto{
-        padding: 0px 20px 340px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 20px;
         justify-content: center;
 
         
@@ -97,40 +95,67 @@ main{
             margin: 30px 0px 0px;
 
             & i:hover{
-                color: red
+                color: red;
+                cursor: context-menu;
             }
         }
 
-        #formulario{
+        img[src="..\\Img\\Localización.png"] {
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            margin: 10px 0px;
+            transition: transform 0.3s ease;
+        }
+        
+        img[src="..\\Img\\Localización.png"]:hover {
+            transform: scale(1.1);
+            border-radius: 0%;
+            padding: 20px 0px;
+            margin: 0px 50px;
+            width: 800px;
+            height: 400px;
+        }
 
+        #formulario{
             display: flex;
             flex-direction: column;
 
             div{
-                display: flex;
-                margin-bottom: 15px;
-            }
-
-            input[type="text"] + label {
-                margin-right: 10px; 
+                margin-bottom: 20px;
             }
 
             input[type="radio"] {
-                margin-left: 10px;
+                margin: 5px;
             }
 
             input[type="checkbox"] + label {
                 margin-left: 10px; 
             }
 
+            label + input[type="text"], input[type="email"] {
+                display: flex;
+                flex-direction: column;
+                width: 200px;         
+            }
+            
+            label + textarea{
+                display: flex;
+                flex-direction: column;
+                width: 250px;         
+            }
+
             button{
                 cursor: pointer;
+                width: 75px;
             }
         }
         
     }
 
 }
+
+
 
 footer{
     text-align: center;
