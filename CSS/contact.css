@@ -40,7 +40,7 @@ main{
 
             & i:hover{
                 color: red; /* Iconos en rojo al pasar el mouse */
-                cursor: context-menu;
+                cursor: default;
             }
         }
 

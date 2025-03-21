@@ -65,7 +65,7 @@ main{
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 0px 0px 10px; 
-        font-size: 250x;
+        font-size: 25px;
     }
 
     .letra{
@@ -93,7 +93,7 @@ aside{
     }
 
     .marina1, .deadlift{
-        height: 400px; /* Altura fija para algunas imágenes */
+        height: 450px; /* Altura fija para algunas imágenes */
     }
 
     img:hover{
