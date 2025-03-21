@@ -5,6 +5,7 @@
     --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
     --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
     --bg-corner: linear-gradient(230deg, #919191, #1b1b1b);
+    --c-letra: rgb(197, 180, 180);
 
 }
 
@@ -12,6 +13,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 main{
@@ -34,6 +36,11 @@ main{
     p{
         text-align: center;
         padding: 0px 15px 10px;
+
+    }
+
+    .letra{
+            color: var(--c-letra);
     }
 
     #skills{

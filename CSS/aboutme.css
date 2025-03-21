@@ -2,23 +2,23 @@
     --bg-gradiant: linear-gradient(to right, #000000 30%, #a8a8a8 90%, #ffffff);
     --bg-gris: #a8a8a8;
     --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
-    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
+    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 60%);
     --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
+    --bg-h1: linear-gradient(to left, #fd0000 90%, #000000 97%);
     --bg-corner: linear-gradient(50deg, #919191, #1b1b1b);
     --bg-carrusel: #1b1b1b;
-
+    --c-letra: rgb(197, 180, 180);
 }
 
 *{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 body{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: auto 1fr 1fr auto;
     grid-template-areas:
     "header header"
@@ -34,20 +34,75 @@ main{
     padding: 15px;
 
     img{
-        width: 200px;
+        width: 225px;
         height: auto;
+        border-radius: 100%;
     }
 
+    :hover img{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgb(216, 19, 19);
+    }
+
+    & h3{
+        background: var(--bg-h1);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 20px 0px 20px;
+        font-size: 30px;
+    }
+
+    & h2{
+        background: var(--bg-h2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 25px 0px 15px;
+        font-size: 25px;
+    }
+
+
+    & h4{
+        background: var(--bg-h2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0px 0px 10px; 
+        font-size: 250x;
+    
+    }
+
+
+    .letra{
+        color: var(--c-letra);
+        font-size: 17px;
+    }
+   
 }
 
 aside{
     grid-area: aside;
     background: var(--bg-carrusel);
+    text-align: center;
+
+    & h3{
+        background: var(--bg-h1);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 10px;
+    }
 
     img{
         margin: 0px;
         width: 100%;
         height: auto;
+    }
+
+    .marina1, .deadlift{
+        height: 400px;
+    }
+
+    img:hover{
+        transform: scale(1.05);
+        box-shadow: 0 5px 5px rgba(216, 19, 19, 0.459);
     }
 }
 
