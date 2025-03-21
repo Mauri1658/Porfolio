@@ -4,6 +4,7 @@
     --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
     --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
     --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
+    --bg-tarjeta: #868686;
 
 
 }
@@ -67,7 +68,78 @@ header{
 }
 
 main{
+    background: var(--bg-gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        background: var(--bg-h);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h2{
+        font-size: 18px;
+        background: var(--bg-h2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 10px;
+    }
+
+    .proyectos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+
+        .tarjetaP{
+            overflow: hidden;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 10px 10px;
+            position: relative;
+            width: 450px;
+            text-align: center;
+
+            h5{
+                background: var(--bg-h2);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 20px;
+                font-variant: small-caps;
+            }
+            
+            .cardP{
+                background: var(--bg-tarjeta);
+            }
+
+            :hover img{
+                transform: scale(1.05);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            }
+
+            & img{
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                object-fit: cover;
+                height: 400px;
+                width: 450px;
+            }
+
+
+
+            i{
+                color: red;
+            }
+        }
     
+    }
 }
 
 

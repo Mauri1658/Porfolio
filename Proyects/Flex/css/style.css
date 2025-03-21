@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+body{
+
+    header{
+        background-color: #80b3ec;
+        text-align: center;
+        padding: 15px;
+    }
+
+    section{
+        text-align: center;
+        padding-bottom: 5px;
+
+        #mascotas{
+            width: 100%;
+            
+        }
+
+        #titulo{
+            color: #8eb1de;
+            font-size: 25px;
+        }
+
+        #quees{
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 15.5px;
+        }
+
+    }
+
+    article{
+        background-color: #e0f2ff;
+        padding: 30px;
+        margin: 20px auto;
+
+        h2{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        p{
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+
+        ul{
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        li{
+            font-size: 16.3;
+        }
+
+    }
+
+    #gallery{
+        text-align: center;
+        margin: 57px;
+
+        #galeria{
+            color: #8eb1de;
+            margin-bottom: 100px;
+        }
+
+        #photos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            img{
+                border-radius: 10px;
+                width: calc(33.33% - 10px);
+                margin-bottom: 55px;
+            }
+
+        }
+    }
+
+    aside{
+        background-color: #c0deff;
+        padding: 20px;
+        margin-top: 30px;
+
+        h2{
+            text-align: center;
+            font-weight: bold;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 12.5px;
+        }
+    }
+
+    footer{
+        text-align: center;
+        background-color: #80b3ec;
+        padding: 25px;
+    }
+
+}

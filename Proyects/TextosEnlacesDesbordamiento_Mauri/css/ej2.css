@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.perfil{
+    border: 2px solid;
+    overflow: scroll;
+    width: 312px;
+    height: 147px;
+    padding: 10px;
+}
+
+.descripcion{
+    text-decoration: underline;
+    width: 1035px;
+    margin-left: 20px;
+    position: relative;
+    word-spacing: 8px;
+    letter-spacing:  2px;
+    text-transform: capitalize;
+}
+.descripcion a{
+    text-decoration: none;
+}
+
+.detalles{
+    width: 200px;
+}
+
+.detalles li{
+    padding-bottom: 5px;
+}

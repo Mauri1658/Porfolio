@@ -1,0 +1,186 @@
+*{
+    background-color: black;
+    padding: 5px;
+}
+
+#contenedor{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    height: 100vh;
+
+    #rojo1, #rojo2, #azul1, #amarillo1, #bauhaus, #blanco, #azul2, #amarillo2{
+        padding: 20px;
+    }
+
+    #rojo1{
+        background-color: red;
+        grid-column: 1;
+        grid-row: 1;
+        padding: 40px;
+    }
+
+    #rojo2{
+        background-color: red;
+        grid-column: 2/4;
+        grid-row: 1/6;
+    }
+
+    #azul1{
+        background-color: blue;
+        grid-column: 4/7;
+        grid-row: 1;
+    }
+
+    #amarillo1{
+        background-color: yellow;
+        grid-column: 1;
+        grid-row: 2/6;
+    }
+
+
+    #bauhaus{
+        background-color: white;
+        grid-column: 4/7;
+        grid-row: 2/5;
+        text-align: end;
+        padding: 30px;
+
+        h1{
+            font-size: 70px;
+            background-color: white;
+            padding: 40px auto 30px;
+
+        }
+
+        p{
+            font-size: 14px;
+            background-color: white;
+        }
+    }
+
+    #blanco{
+        background-color: white;
+        grid-column: 4;
+        grid-row: 5/6;
+    }
+
+    #azul2{
+        background-color: blue;
+        grid-column: 5;
+        grid-row: 5/6;
+    }
+
+    #amarillo2{
+        background-color: yellow;
+        grid-column: 6;
+        grid-row: 5/6;
+    }
+}
+
+@media (max-width: 1000px){
+    #contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 9;
+        grid-template-areas:
+        "azul1 azul1 azul1"
+        "bauhaus bauhaus bauhaus"
+        "bauhaus bauhaus bauhaus"
+        "bauhaus bauhaus bauhaus"
+        "blanco azul2 amarillo1"
+        "rojo1 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        ;
+        
+
+        #rojo1, #rojo2, #azul1, #amarillo1, #bauhaus, #blanco, #azul2, #amarillo2{
+            padding: 40px;
+        }
+
+        #rojo1{
+            grid-area: rojo1;
+        }
+
+        #rojo2{
+            grid-area: rojo2;
+        }
+
+        #azul1{
+            grid-area: azul1;
+        }
+
+        #amarillo1{
+            grid-area: amarillo1;
+        }
+
+        #bauhaus{
+            grid-area: bauhaus;
+        }
+
+        #blanco{
+            grid-area: blanco;
+        }
+
+        #azul2{
+            grid-area: azul2;
+        }
+
+        #amarillo2{
+            grid-area: amarillo2;
+        }
+
+    }
+
+}
+
+@media (max-width: 768px){
+    #contenedor{
+        grid-template-columns: 1fr;
+
+        #rojo1, #rojo2, #azul1, #amarillo1, #bauhaus, #blanco, #azul2, #amarillo2{
+            grid-column: 1;
+        }
+
+        #rojo1{
+            grid-row: 1;
+        }
+
+        #rojo2{
+            grid-row: 2;
+        }
+
+        #azul1{
+            grid-row: 3;
+        }
+
+        #amarillo1{
+            grid-row: 4;
+        }
+
+        #bauhaus{
+            text-align: center;
+            grid-row: 5;
+            padding: 10px;
+        }
+
+        #blanco{
+            grid-row: 6;
+        }
+
+        #azul2{
+            grid-row: 7;
+        }
+
+        #amarillo2{
+            grid-row: 8;
+        }
+
+
+    }
+
+}

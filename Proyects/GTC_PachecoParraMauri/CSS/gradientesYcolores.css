@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #87dfeb 50%, white);
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+}
+
+.caja{
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 40px;
+    display: inline-block;
+    align-content: center;
+    color:white
+}
+
+.caja1{
+    background-color: #ee2f30
+
+}
+
+.caja2{
+    background-color: #56b578
+
+}
+
+.caja3{
+   background: linear-gradient(to left, #ff601d, #fe9400)
+
+}
+
+.caja4{
+    background: radial-gradient(circle,#011c84 20px, #00e5ff 100px) 
+}
+
+.caja5{
+    background: linear-gradient(to right, #4ffeaf, #0ad7f5, #002cfd) 
+
+}
+
+.caja6{
+    background: linear-gradient(128deg, #e73c94, #378be9)
+    
+}
+
+.caja7{
+    background: radial-gradient(circle 130px, #fefbf4, #f3c974, #3abddb)
+    
+}
+
+.caja8{
+    background: radial-gradient(circle at bottom left, #f55737 20px, #feea3d, #319aea 256px)
+}
+
+.caja9{
+    background: conic-gradient(#f55737 , #feea3d, #319aea, black )
+}
