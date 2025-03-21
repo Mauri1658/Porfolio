@@ -1,23 +1,21 @@
 :root{
-    --bg-gradiant: linear-gradient(to right, #000000 30%, #a8a8a8 90%, #ffffff);
-    --bg-gris: #a8a8a8;
-    --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
-    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
-    --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
-    --bg-tarjeta: #868686;
-    --bg-corner: linear-gradient(230deg, #919191, #1b1b1b);
-
+    --bg-gradiant: linear-gradient(to right, #000000 30%, #a8a8a8 90%, #ffffff); /* Gradiente para el fondo */
+    --bg-gris: #a8a8a8; /* Color gris */
+    --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px); /* Gradiente radial */
+    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%); /* Gradiente para h2 */
+    --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%); /* Gradiente para h1 */
+    --bg-tarjeta: #868686; /* Color de fondo de las tarjetas */
+    --bg-corner: linear-gradient(230deg, #919191, #1b1b1b); /* Gradiente para el fondo principal */
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada */
 }
 
 main{
-    
-    background: var(--bg-corner);
+    background: var(--bg-corner); /* Fondo con gradiente */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,14 +23,14 @@ main{
 
     h1{
         margin-top: 15px;
-        background: var(--bg-h);
+        background: var(--bg-h); /* Gradiente para h1 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     h2{
         font-size: 18px;
-        background: var(--bg-h2);
+        background: var(--bg-h2); /* Gradiente para h2 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 10px;
@@ -40,25 +38,24 @@ main{
 
     .proyectos{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Grid de 2 columnas */
         gap: 20px;
         justify-content: center;
         align-items: center;
         margin-bottom: 10px;
 
-
         .tarjetaP{
             overflow: hidden;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
             margin: 10px 10px;
             position: relative;
             width: 450px;
             text-align: center;
 
             h5{
-                background: var(--bg-h2);
+                background: var(--bg-h2); /* Gradiente para h5 */
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-size: 20px;
@@ -66,12 +63,12 @@ main{
             }
             
             .cardP{
-                background: var(--bg-tarjeta);
+                background: var(--bg-tarjeta); /* Fondo de la tarjeta */
             }
 
             :hover img{
-                transform: scale(1.05);
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+                transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra */
             }
 
             & img{
@@ -82,13 +79,10 @@ main{
                 width: 450px;
             }
 
-
-
             i{
-                color: red;
+                color: red; /* Iconos en rojo */
             }
         }
-    
     }
 }
 
@@ -99,7 +93,7 @@ header{
     & h1{
         font-size: 25px;
         font-variant: small-caps;
-        background: var(--bg-h);
+        background: var(--bg-h); /* Gradiente para h1 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -108,13 +102,13 @@ header{
         font-variant: small-caps;
         font-size: 20px;
         margin-bottom: 5px;
-        background: var(--bg-h2);
+        background: var(--bg-h2); /* Gradiente para h2 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     nav{
-        background: var(--bg-gradiant);
+        background: var(--bg-gradiant); /* Fondo con gradiente */
         width: 100%;
         padding: 10px;
 
@@ -131,13 +125,13 @@ header{
             }
 
             & a{
-                color: white;
+                color: white; /* Enlaces en blanco */
                 text-decoration: none;
                 font-size: 15px;
             }
 
             & a:hover{
-                color: red
+                color: red /* Enlaces en rojo al pasar el mouse */
             }
         }
     }  
@@ -145,17 +139,17 @@ header{
 
 footer{
     text-align: center;
-    background: var(--bg-gradiant);
+    background: var(--bg-gradiant); /* Fondo con gradiente */
     padding: 20px 0px;
     color: white;
     letter-spacing: 2px;
 
     & a{
-        color: white;
+        color: white; /* Enlaces en blanco */
     }
 
     & a:hover{
-        color: red
+        color: red /* Enlaces en rojo al pasar el mouse */
     }
 
     .social{
@@ -163,6 +157,6 @@ footer{
     }
 
     p span{
-        color: red;
+        color: red; /* Texto en rojo */
     }
 }

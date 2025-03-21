@@ -1,24 +1,24 @@
 :root{
-    --bg-gradiant: linear-gradient(to right, #000000 30%, #a8a8a8 90%, #ffffff);
-    --bg-gris: #a8a8a8;
-    --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
-    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 60%);
-    --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
-    --bg-h1: linear-gradient(to left, #fd0000 90%, #000000 97%);
-    --bg-corner: linear-gradient(50deg, #919191, #1b1b1b);
-    --bg-carrusel: #1b1b1b;
-    --c-letra: rgb(197, 180, 180);
+    --bg-gradiant: linear-gradient(to right, #000000 30%, #a8a8a8 90%, #ffffff); /* Gradiente para el fondo */
+    --bg-gris: #a8a8a8; /* Color gris */
+    --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px); /* Gradiente radial */
+    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 60%); /* Gradiente para h2 */
+    --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%); /* Gradiente para h1 */
+    --bg-h1: linear-gradient(to left, #fd0000 90%, #000000 97%); /* Gradiente para h1 */
+    --bg-corner: linear-gradient(50deg, #919191, #1b1b1b); /* Gradiente para el fondo principal */
+    --bg-carrusel: #1b1b1b; /* Color de fondo del carrusel */
+    --c-letra: rgb(197, 180, 180); /* Color de letra */
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada */
 }
 
 body{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 40%; /* Grid de 2 columnas */
     grid-template-rows: auto 1fr 1fr auto;
     grid-template-areas:
     "header header"
@@ -30,22 +30,22 @@ body{
 
 main{
     grid-area: main;
-    background: var(--bg-corner);
+    background: var(--bg-corner); /* Fondo con gradiente */
     padding: 15px;
 
     img{
         width: 225px;
         height: auto;
-        border-radius: 100%;
+        border-radius: 100%; /* Imagen redonda */
     }
 
     :hover img{
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgb(216, 19, 19);
+        transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+        box-shadow: 0 10px 20px rgb(216, 19, 19); /* Sombra roja */
     }
 
     & h3{
-        background: var(--bg-h1);
+        background: var(--bg-h1); /* Gradiente para h3 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 20px 0px 20px;
@@ -53,38 +53,34 @@ main{
     }
 
     & h2{
-        background: var(--bg-h2);
+        background: var(--bg-h2); /* Gradiente para h2 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 25px 0px 15px;
         font-size: 25px;
     }
 
-
     & h4{
-        background: var(--bg-h2);
+        background: var(--bg-h2); /* Gradiente para h4 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 0px 0px 10px; 
         font-size: 250x;
-    
     }
-
 
     .letra{
-        color: var(--c-letra);
+        color: var(--c-letra); /* Color de letra personalizado */
         font-size: 17px;
     }
-   
 }
 
 aside{
     grid-area: aside;
-    background: var(--bg-carrusel);
+    background: var(--bg-carrusel); /* Fondo del carrusel */
     text-align: center;
 
     & h3{
-        background: var(--bg-h1);
+        background: var(--bg-h1); /* Gradiente para h3 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 10px;
@@ -97,12 +93,12 @@ aside{
     }
 
     .marina1, .deadlift{
-        height: 400px;
+        height: 400px; /* Altura fija para algunas imágenes */
     }
 
     img:hover{
-        transform: scale(1.05);
-        box-shadow: 0 5px 5px rgba(216, 19, 19, 0.459);
+        transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+        box-shadow: 0 5px 5px rgba(216, 19, 19, 0.459); /* Sombra roja */
     }
 }
 
@@ -114,7 +110,7 @@ header{
     & h1{
         font-size: 25px;
         font-variant: small-caps;
-        background: var(--bg-h);
+        background: var(--bg-h); /* Gradiente para h1 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -123,13 +119,13 @@ header{
         font-variant: small-caps;
         font-size: 20px;
         margin-bottom: 5px;
-        background: var(--bg-h2);
+        background: var(--bg-h2); /* Gradiente para h2 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     nav{
-        background: var(--bg-gradiant);
+        background: var(--bg-gradiant); /* Fondo con gradiente */
         width: 100%;
         padding: 10px;
 
@@ -146,33 +142,32 @@ header{
             }
 
             & a{
-                color: white;
+                color: white; /* Enlaces en blanco */
                 text-decoration: none;
                 font-size: 15px;
             }
 
             & a:hover{
-                color: red
+                color: red /* Enlaces en rojo al pasar el mouse */
             }
         }
     }  
 }
 
-
 footer{
     grid-area: footer;
     text-align: center;
-    background: var(--bg-gradiant);
+    background: var(--bg-gradiant); /* Fondo con gradiente */
     padding: 20px 0px;
     color: white;
     letter-spacing: 2px;
 
     & a{
-        color: white;
+        color: white; /* Enlaces en blanco */
     }
 
     & a:hover{
-        color: red
+        color: red /* Enlaces en rojo al pasar el mouse */
     }
 
     .social{
@@ -180,6 +175,6 @@ footer{
     }
 
     p span{
-        color: red;
+        color: red; /* Texto en rojo */
     }
 }

@@ -1,28 +1,24 @@
 :root{
-    --bg-gradiant: linear-gradient(to right, #000000 30%, #a8a8a8 90%, #ffffff);
-    --bg-gris: #a8a8a8;
-    --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px);
-    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%);
-    --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%);
-    --bg-h1: linear-gradient(to left, #fd0000 80%, #000000 99%);
-    --bg-corner: linear-gradient(230deg,#1b1b1b, #919191);
-
-
+    --bg-gradiant: linear-gradient(to right, #000000 30%, #a8a8a8 90%, #ffffff); /* Gradiente para el fondo */
+    --bg-gris: #a8a8a8; /* Color gris */
+    --bg-radial: radial-gradient(circle,#c5c3c3 20px, #666666 100px); /* Gradiente radial */
+    --bg-h2: linear-gradient(to right, #fd0000 30%, #000000 80%); /* Gradiente para h2 */
+    --bg-h: linear-gradient(to left, #fd0000 30%, #000000 80%); /* Gradiente para h1 */
+    --bg-h1: linear-gradient(to left, #fd0000 80%, #000000 99%); /* Gradiente para h1 */
+    --bg-corner: linear-gradient(230deg,#1b1b1b, #919191); /* Gradiente para el fondo principal */
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada */
 }
 
 main{
-    
-    background: var(--bg-corner);
+    background: var(--bg-corner); /* Fondo con gradiente */
     
     & h1{
-        background: var(--bg-h1);
+        background: var(--bg-h1); /* Gradiente para h1 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 30px 15px 20px;
@@ -32,35 +28,34 @@ main{
         padding: 20px 20px;
         justify-content: center;
 
-        
         & h2{
-        background: var(--bg-h2);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 20px;
+            background: var(--bg-h2); /* Gradiente para h2 */
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
         }
 
         & h4{
             margin: 30px 0px 0px;
 
             & i:hover{
-                color: red;
+                color: red; /* Iconos en rojo al pasar el mouse */
                 cursor: context-menu;
             }
         }
 
         img[src="..\\Img\\Localización.png"] {
-            border-radius: 100%;
+            border-radius: 100%; /* Imagen redonda */
             width: 100px;
             height: 100px;
             margin: 10px 0px;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease; /* Transición suave */
         }
         
         img[src="..\\Img\\Localización.png"]:hover {
-            transform: scale(1.1);
+            transform: scale(1.1); /* Efecto de escala al pasar el mouse */
             border-radius: 0%;
-            box-shadow: 0 10px 30px rgb(216, 19, 19);
+            box-shadow: 0 10px 30px rgb(216, 19, 19); /* Sombra roja */
             margin: 50px 50px;
             width: 800px;
             height: 400px;
@@ -99,9 +94,7 @@ main{
                 width: 75px;
             }
         }
-        
     }
-
 }
 
 header{
@@ -111,7 +104,7 @@ header{
     & h1{
         font-size: 25px;
         font-variant: small-caps;
-        background: var(--bg-h);
+        background: var(--bg-h); /* Gradiente para h1 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -120,13 +113,13 @@ header{
         font-variant: small-caps;
         font-size: 20px;
         margin-bottom: 5px;
-        background: var(--bg-h2);
+        background: var(--bg-h2); /* Gradiente para h2 */
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     nav{
-        background: var(--bg-gradiant);
+        background: var(--bg-gradiant); /* Fondo con gradiente */
         width: 100%;
         padding: 10px;
 
@@ -143,13 +136,13 @@ header{
             }
 
             & a{
-                color: white;
+                color: white; /* Enlaces en blanco */
                 text-decoration: none;
                 font-size: 15px;
             }
 
             & a:hover{
-                color: red
+                color: red /* Enlaces en rojo al pasar el mouse */
             }
         }
     }  
@@ -157,17 +150,17 @@ header{
 
 footer{
     text-align: center;
-    background: var(--bg-gradiant);
+    background: var(--bg-gradiant); /* Fondo con gradiente */
     padding: 20px 0px;
     color: white;
     letter-spacing: 2px;
 
     & a{
-        color: white;
+        color: white; /* Enlaces en blanco */
     }
 
     & a:hover{
-        color: red
+        color: red /* Enlaces en rojo al pasar el mouse */
     }
 
     .social{
@@ -175,6 +168,6 @@ footer{
     }
 
     p span{
-        color: red;
+        color: red; /* Texto en rojo */
     }
 }
