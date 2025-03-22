@@ -1,4 +1,4 @@
-# BetterIfYouDOntReadme
+# BetterIfYouDontReadme
 
 Aqui describiré los elementos que he utilizado para el desarrollo del porfolio. 
 
