@@ -66,3 +66,6 @@ Algunos ejemplos:
 
 - Favicon Generator: https://favicon.io/favicon-generator/
 
+## Vídeo Explicación
+
+- https://drive.google.com/file/d/1sIxXCT-YTRJTeNTRrQCFbJpqHR5N5jiK/view?usp=sharing
